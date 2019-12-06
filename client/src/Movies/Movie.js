@@ -9,6 +9,7 @@ const Movie = (props) => {
  
   useEffect(() => {
  const id = props.match.params.id
+ console.log(id);
  
  
     // change ^^^ that line and grab the id from the URL
@@ -37,6 +38,7 @@ const Movie = (props) => {
   }
 
   const { title, director, metascore, stars } = movie;
+  
   return (
     <div className="save-wrapper">
       <div className="movie-card">
